@@ -92,6 +92,10 @@ chmod +x ${ghproxy_dir}/ghproxy
 # 下载pages
 wget -q -O ${ghproxy_dir}/pages/index.html https://raw.githubusercontent.com/Miku-programm/ghproxy-pages/main/bootstrap/index.html
 wget -q -O ${ghproxy_dir}/pages/favicon.ico https://raw.githubusercontent.com/Miku-programm/ghproxy-pages/main/bootstrap/favicon.ico
+wget -q -O ${ghproxy_dir}/pages/style.css https://raw.githubusercontent.com/Miku-programm/ghproxy-pages/main/bootstrap/style.css
+wget -q -O ${ghproxy_dir}/pages/script.js https://raw.githubusercontent.com/Miku-programm/ghproxy-pages/main/bootstrap/script.js
+wget -q -O ${ghproxy_dir}/pages/bootstrap.min.css https://raw.githubusercontent.com/Miku-programm/ghproxy-pages/main/assets/bootstrap.min.css
+wget -q -O ${ghproxy_dir}/pages/bootstrap.bundle.min.js https://raw.githubusercontent.com/Miku-programm/ghproxy-pages/main/assets/bootstrap.bundle.min.js
 
 
 # 下载配置文件
@@ -100,7 +104,7 @@ if [ -f ${ghproxy_dir}/config/config.toml ]; then
     echo "[WARNING] 请检查配置文件是否正确，DEV版本升级时请注意配置文件兼容性"
     sleep 2
 else
-    wget -q -O ${ghproxy_dir}/config/config.toml https://raw.githubusercontent.com/WJQSERVER-STUDIO/ghproxy/dev/deploy/config.toml
+    wget -q -O ${ghproxy_dir}/config/config.toml https://raw.githubusercontent.com/Miku-programm/ghproxy/main/deploy/config.toml
 fi
 
 # 替换 port = 8080 
