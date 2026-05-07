@@ -24,7 +24,7 @@ editor = false
 rewriteAPI = false
 
 [pages]
-mode = "internal" # "internal" or "external"
+mode = "external" # "internal" or "external"
 theme = "bootstrap" # "bootstrap" or "nebula"
 staticDir = "/usr/local/ghproxy/pages" 
 
