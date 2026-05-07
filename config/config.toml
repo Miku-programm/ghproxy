@@ -24,7 +24,7 @@ rewriteAPI = false
 
 [pages]
 mode = "internal" # "internal" or "external"
-theme = "bootstrap" # "bootstrap" or "nebula"
+theme = "mino" # "bootstrap", "nebula", "design", "metro", "classic", "mino", "hub" or "free"
 staticDir = "/data/www" 
 
 [log]

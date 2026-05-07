@@ -94,7 +94,7 @@ type ShellConfig struct {
 /*
 [pages]
 mode = "internal" # "internal" or "external"
-theme = "bootstrap" # "bootstrap" or "nebula"
+theme = "mino" # "bootstrap", "nebula", "design", "metro", "classic", "mino", "hub" or "free"
 staticDir = "/data/www"
 */
 // PagesConfig 定义静态页面相关的配置
@@ -321,7 +321,7 @@ func DefaultConfig() *Config {
 		},
 		Pages: PagesConfig{
 			Mode:      "internal",
-			Theme:     "hub",
+			Theme:     "mino",
 			StaticDir: "/data/www",
 		},
 		Log: LogConfig{

@@ -90,12 +90,10 @@ tar -zxvf ${ghproxy_dir}/ghproxy-linux-$ARCH.tar.gz -C ${ghproxy_dir}
 chmod +x ${ghproxy_dir}/ghproxy
 
 # 下载pages
-wget -q -O ${ghproxy_dir}/pages/index.html https://raw.githubusercontent.com/Miku-programm/ghproxy-pages/main/bootstrap/index.html
-wget -q -O ${ghproxy_dir}/pages/favicon.ico https://raw.githubusercontent.com/Miku-programm/ghproxy-pages/main/bootstrap/favicon.ico
-wget -q -O ${ghproxy_dir}/pages/style.css https://raw.githubusercontent.com/Miku-programm/ghproxy-pages/main/bootstrap/style.css
-wget -q -O ${ghproxy_dir}/pages/script.js https://raw.githubusercontent.com/Miku-programm/ghproxy-pages/main/bootstrap/script.js
-wget -q -O ${ghproxy_dir}/pages/bootstrap.min.css https://raw.githubusercontent.com/Miku-programm/ghproxy-pages/main/assets/bootstrap.min.css
-wget -q -O ${ghproxy_dir}/pages/bootstrap.bundle.min.js https://raw.githubusercontent.com/Miku-programm/ghproxy-pages/main/assets/bootstrap.bundle.min.js
+wget -q -O ${ghproxy_dir}/pages/index.html https://raw.githubusercontent.com/Miku-programm/ghproxy-pages/main/mino/index.html
+wget -q -O ${ghproxy_dir}/pages/favicon.ico https://raw.githubusercontent.com/Miku-programm/ghproxy-pages/main/mino/favicon.ico
+wget -q -O ${ghproxy_dir}/pages/style.css https://raw.githubusercontent.com/Miku-programm/ghproxy-pages/main/mino/style.css
+wget -q -O ${ghproxy_dir}/pages/script.js https://raw.githubusercontent.com/Miku-programm/ghproxy-pages/main/mino/script.js
 
 
 # 下载配置文件
