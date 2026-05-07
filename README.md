@@ -1,10 +1,10 @@
 # GHProxy
 
-![GitHub Release](https://img.shields.io/github/v/release/WJQSERVER-STUDIO/ghproxy?display_name=tag&style=flat)
+![GitHub Release](https://img.shields.io/github/v/release/Miku-programm/ghproxy?display_name=tag&style=flat)
 ![pull](https://img.shields.io/docker/pulls/wjqserver/ghproxy.svg)
 ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/wjqserver/ghproxy/latest)
-![GitHub go.mod Go version](https://img.shields.io/github/go-mod/go-version/WJQSERVER-STUDIO/ghproxy)
-[![Go Report Card](https://goreportcard.com/badge/github.com/WJQSERVER-STUDIO/ghproxy)](https://goreportcard.com/report/github.com/WJQSERVER-STUDIO/ghproxy)
+![GitHub go.mod Go version](https://img.shields.io/github/go-mod/go-version/Miku-programm/ghproxy)
+[![Go Report Card](https://goreportcard.com/badge/github.com/Miku-programm/ghproxy)](https://goreportcard.com/report/github.com/Miku-programm/ghproxy)
 
 一个基于Go的高性能Github资源代理程序, 同时支持Docker镜像代理与脚本嵌套加速等多种功能
 
@@ -71,29 +71,29 @@ docker run -p 7210:8080 -v ./ghproxy/log/run:/data/ghproxy/log -v ./ghproxy/log/
 
 - Docker-Compose (建议使用)
 
-    参看[docker-compose.yml](https://github.com/WJQSERVER-STUDIO/ghproxy/blob/main/docker/compose/docker-compose.yml)
+    参看[docker-compose.yml](https://github.com/Miku-programm/ghproxy/blob/main/docker/compose/docker-compose.yml)
 
 ### 二进制文件部署(不推荐)
 
 一键部署脚本:
 
 ```bash
-wget -O install.sh https://raw.githubusercontent.com/WJQSERVER-STUDIO/ghproxy/main/deploy/install.sh && chmod +x install.sh &&./install.sh
+wget -O install.sh https://raw.githubusercontent.com/Miku-programm/ghproxy/main/deploy/install.sh && chmod +x install.sh && ./install.sh
 ```
 
 Dev一键部署脚本:
 
 ```bash
-wget -O install-dev.sh https://raw.githubusercontent.com/WJQSERVER-STUDIO/ghproxy/dev/deploy/install-dev.sh && chmod +x install-dev.sh && ./install-dev.sh
+wget -O install-dev.sh https://raw.githubusercontent.com/Miku-programm/ghproxy/main/deploy/install-dev.sh && chmod +x install-dev.sh && ./install-dev.sh
 ```
 
 ## 配置说明
 
-参看[项目文档](https://github.com/WJQSERVER-STUDIO/ghproxy/blob/main/docs/config.md)
+参看[项目文档](https://github.com/Miku-programm/ghproxy/blob/main/docs/config.md)
 
 ### 前端页面
 
-参看[GHProxy-Frontend](https://github.com/WJQSERVER-STUDIO/GHProxy-Frontend)
+参看[ghproxy-pages](https://github.com/Miku-programm/ghproxy-pages)
 
 ## 文档
 
