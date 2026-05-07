@@ -72,13 +72,13 @@ var (
 	// baseHealthcheckResponse 基础健康检查响应（固定部分）
 	baseHealthcheckResponse = HealthcheckResponse{
 		Status: "OK",
-		Repo:   "WJQSERVER-STUDIO/GHProxy",
-		Author: "WJQSERVER-STUDIO",
+		Repo:   "Miku-programm/ghproxy",
+		Author: "Miku-programm",
 	}
 
 	// baseVersionResponse 基础版本响应（固定部分）
 	baseVersionResponse = VersionResponse{
-		Repo:   "WJQSERVER-STUDIO/GHProxy",
-		Author: "WJQSERVER-STUDIO",
+		Repo:   "Miku-programm/ghproxy",
+		Author: "Miku-programm",
 	}
 )

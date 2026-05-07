@@ -258,7 +258,7 @@ func setupPages(cfg *config.Config, r *touka.Engine) {
 	}
 }
 
-var viaString string = "WJQSERVER-STUDIO/GHProxy"
+var viaString string = "Miku-programm/ghproxy"
 
 func pageCacheHeader() func(c *touka.Context) {
 	return func(c *touka.Context) {
@@ -502,7 +502,7 @@ func main() {
 
 	fmt.Printf("GHProxy Version: %s\n", version)
 	fmt.Printf("A Go Based High-Performance Github Proxy \n")
-	fmt.Printf("Made by WJQSERVER-STUDIO\n")
+	fmt.Printf("Made by Miku-programm\n")
 	fmt.Printf("Power by Touka\n")
 
 	if cfg.Server.Debug {

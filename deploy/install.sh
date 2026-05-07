@@ -1,5 +1,5 @@
 # /bin/bash
-# https://github.com/WJQSERVER-STUDIO/ghproxy
+# https://github.com/Miku-programm/ghproxy
 
 ghproxy_dir="/usr/local/ghproxy"
 
@@ -80,11 +80,11 @@ mkdir -p ${ghproxy_dir}/log
 mkdir -p ${ghproxy_dir}/pages
 
 # 获取最新版本号
-VERSION=$(curl -s https://raw.githubusercontent.com/WJQSERVER-STUDIO/ghproxy/main/VERSION)
-wget -q -O ${ghproxy_dir}/VERSION https://raw.githubusercontent.com/WJQSERVER-STUDIO/ghproxy/main/VERSION
+VERSION=$(curl -s https://raw.githubusercontent.com/Miku-programm/ghproxy/main/VERSION)
+wget -q -O ${ghproxy_dir}/VERSION https://raw.githubusercontent.com/Miku-programm/ghproxy/main/VERSION
 
 # 下载ghproxy
-wget -q -O ${ghproxy_dir}/ghproxy-linux-$ARCH.tar.gz https://github.com/WJQSERVER-STUDIO/ghproxy/releases/download/${VERSION}/ghproxy-linux-${ARCH}.tar.gz
+wget -q -O ${ghproxy_dir}/ghproxy-linux-$ARCH.tar.gz https://github.com/Miku-programm/ghproxy/releases/download/${VERSION}/ghproxy-linux-${ARCH}.tar.gz
 install tar
 tar -zxvf ${ghproxy_dir}/ghproxy-linux-$ARCH.tar.gz -C ${ghproxy_dir}
 chmod +x ${ghproxy_dir}/ghproxy
@@ -115,7 +115,7 @@ sed -i "s|whitelistFile = \"/usr/local/ghproxy/config/whitelist.json\"|whitelist
 
 # 下载systemd服务文件
 if [ "$ghproxy_dir" = "/usr/local/ghproxy" ]; then
-    wget -q -O /etc/systemd/system/ghproxy.service https://raw.githubusercontent.com/WJQSERVER-STUDIO/ghproxy/main/deploy/ghproxy.service
+    wget -q -O /etc/systemd/system/ghproxy.service https://raw.githubusercontent.com/Miku-programm/ghproxy/main/deploy/ghproxy.service
 else
 
     cat <<EOF > /etc/systemd/system/ghproxy.service
